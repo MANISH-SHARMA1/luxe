@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { FaSpa } from "react-icons/fa";
+import CountUp from "../CountUp";
 
 export default function WhyChooseImage() {
     return (
@@ -11,7 +12,7 @@ export default function WhyChooseImage() {
             <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-[#D6A45C]/15 blur-[120px]" />
 
             {/* Image */}
-            <div className="relative h-[500px] overflow-hidden rounded-[40px] border border-[#D6A45C]/20">
+            <div className="relative h-132 overflow-hidden rounded-[40px] border border-[#D6A45C]/20">
 
                 <Image
                     src="/whyUs.png"
@@ -21,29 +22,29 @@ export default function WhyChooseImage() {
                 />
 
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent" />
 
             </div>
 
             {/* Floating Card */}
             <div
                 className="
-          absolute
-          bottom-8
-          left-8
-          w-[320px]
-          rounded-[28px]
-          border border-[#D6A45C]/30
-          bg-black/60
-          p-6
-          text-center
-          backdrop-blur-xl
-          shadow-[0_20px_50px_rgba(0,0,0,.4)]
-        "
+                    absolute
+                    bottom-8
+                    left-8
+                    w-[320px]
+                    rounded-[28px]
+                    border border-[#D6A45C]/30
+                    bg-black/60
+                    p-6
+                    text-center
+                    backdrop-blur-xl
+                    shadow-[0_20px_50px_rgba(0,0,0,.4)]
+                    "
             >
 
                 <h2 className="mt-5 font-serif text-5xl text-white">
-                    5000+
+                    <CountUp end={5000} duration={3000} suffix="+" />
                 </h2>
 
                 <p className="mt-1 text-[#D6A45C]">

@@ -5,17 +5,17 @@ import ServiceCard from "./ServiceCard";
 
 export default function Services() {
     return (
-        <section className="relative overflow-hidden bg-[#0B0B0B] py-28">
+        <section id="services" className="relative overflow-hidden bg-[#0B0B0B] py-20 2xl:py-28">
             {/* Background Glow */}
-            <div className="absolute -left-40 top-0 h-[500px] w-[500px] rounded-full bg-[#D6A45C]/40 blur-[170px]" />
-            <div className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-[#D6A45C]/40 blur-[170px]" />
+            <div className="absolute -left-40 top-0 h-125] w-125] rounded-full bg-[#D6A45C]/40 blur-[170px]" />
+            <div className="absolute -right-40 bottom-0 h-125] w-125] rounded-full bg-[#D6A45C]/40 blur-[170px]" />
 
             {/* Noise Gradient */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#2c1d09_0%,transparent_45%)] opacity-40" />
 
             {/* Decorative Lines */}
             <div className="pointer-events-none absolute left-0 top-0 h-full w-full">
-                <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#D6A45C]/20 to-transparent" />
+                <div className="absolute left-0 top-0 h-px w-full bg-linear-to-r from-transparent via-[#D6A45C]/20 to-transparent" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-6 text-center">
@@ -34,7 +34,7 @@ export default function Services() {
                 </div>
 
                 {/* Main Heading */}
-                <h2 className="mt-8 font-serif text-5xl leading-tight text-white md:text-6xl">
+                <h2 className="mt-4 2xl:mt-8 font-serif leading-tight text-white text-3xl md:text-5xl 2xl:text-7xl">
 
                     Luxury
                     {" "}
@@ -49,7 +49,7 @@ export default function Services() {
                 </h2>
 
                 {/* Decorative Icon */}
-                <div className="mt-8 flex items-center justify-center gap-4">
+                <div className="mt-4 2xl:mt-8 flex items-center justify-center gap-4">
 
                     <span className="h-px w-20 bg-[#D6A45C]/40" />
 
@@ -65,7 +65,7 @@ export default function Services() {
                 </div>
 
                 {/* Description */}
-                <p className="mx-auto mt-10 max-w-3xl leading-9 text-gray-400">
+                <p className="mx-auto mt-4 2xl:mt-8 max-w-3xl leading-7 2xl:leading-9 text-xs md:text-sm 2xl:text-base text-gray-400">
 
                     From precision haircuts to flawless bridal makeovers,
                     every service is delivered using premium products,
@@ -95,7 +95,8 @@ export default function Services() {
                 ✦
             </div>
 
-            <div className="mx-auto mt-20 max-w-7xl px-6">
+            {/* CARDS */}
+            <div className="mx-auto mt-16 2xl:mt-20 max-w-7xl px-6">
 
                 {/* Large Cards */}
                 <div className="grid gap-8 lg:grid-cols-2">

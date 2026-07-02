@@ -8,16 +8,13 @@ import { FaSpa } from "react-icons/fa";
 
 export default function WhyChooseUs() {
     return (
-        <section className="relative overflow-hidden bg-[#090909] py-28">
+        <section className="relative overflow-hidden bg-[#090909] py-20 2xl:py-28">
             {/* Background Glow */}
-            <div className="absolute -left-40 top-0 h-[500px] w-[500px] rounded-full bg-[#D6A45C]/40 blur-[170px]" />
-            <div className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-[#D6A45C]/40 blur-[170px]" />
+            <div className="absolute -left-40 top-0 h-125 w-125 rounded-full bg-[#D6A45C]/40 blur-[170px]" />
+            <div className="absolute -right-40 bottom-0 h-125 w-125 rounded-full bg-[#D6A45C]/40 blur-[170px]" />
 
             {/* Decorative Gold Gradient */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#3b2812,transparent_45%)] opacity-80" />
-
-            {/* Gold Curve */}
-            {/* <div className="absolute -bottom-32 left-1/2 h-[420px] w-[140%] -translate-x-1/2 rounded-full border border-[#D6A45C]/15" /> */}
 
             {/* Floating Sparkles */}
             <span className="absolute left-20 top-40 text-4xl text-[#D6A45C]/70">
@@ -42,7 +39,7 @@ export default function WhyChooseUs() {
                     </p>
 
                     {/* Decorative Divider */}
-                    <div className="mt-5 flex items-center justify-center gap-5">
+                    <div className="mt-4 2xl:mt-8 flex items-center justify-center gap-5">
 
                         <span className="h-px w-32 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
@@ -56,7 +53,7 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Main Heading */}
-                    <h2 className="my-8 font-serif text-5xl leading-tight text-white text-center md:text-6xl">
+                    <h2 className="my-4 2xl:my-8 font-serif leading-tight text-white text-center text-3xl md:text-5xl 2xl:text-7xl">
                         Experience Beauty
                         <br />
 
@@ -68,7 +65,7 @@ export default function WhyChooseUs() {
                     </h2>
 
                     {/* Description */}
-                    <p className="mb-8 leading-9 text-lg text-center text-gray-400">
+                    <p className="mb-4 2xl:mb-8 leading-7 2xl:leading-9 text-sm md:text-base 2xl:text-lg text-center text-gray-400">
                         We combine luxury, expertise, and care to deliver an exceptional beauty
                         experience tailored just for you.
                     </p>

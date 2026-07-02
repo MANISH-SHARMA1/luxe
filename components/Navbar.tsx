@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Calendar, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navLinks = [
   { name: "Home", href: "#" },
@@ -15,10 +15,72 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+
+    const onScroll = () => {
+      const current = window.scrollY;
+
+      if (current < 20) {
+        setShowNavbar(true);
+        lastY = current;
+        return;
+      }
+
+      if (current > lastY) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+
+      lastY = current;
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full">
-      <div className="mx-auto mt-5 flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-black/30 px-6 py-4 backdrop-blur-xl shadow-2xl">
+    <header
+      className={`
+        fixed
+        top-0
+        left-0
+        z-50
+        w-full
+        flex
+        justify-center
+        transition-all
+        duration-700
+        ease-[cubic-bezier(.76,0,.24,1)]
+        origin-center
+        ${showNavbar
+              ? "opacity-100 scale-x-100 translate-y-0"
+              : "opacity-0 scale-x-0  pointer-events-none"
+            }
+      `}
+    >
+      <div
+        className="
+          mt-5
+          flex
+          w-full
+          max-w-7xl
+          items-center
+          justify-between
+          rounded-full
+          border
+          border-white/10
+          bg-black/30
+          px-6
+          py-4
+          backdrop-blur-xl
+          shadow-2xl
+        "
+      >
 
         {/* Logo */}
         <Link href="/" className="flex flex-col">
@@ -62,9 +124,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`mx-4 mt-3 overflow-hidden rounded-3xl border border-white/10 bg-[#111111]/95 backdrop-blur-xl transition-all duration-500 lg:hidden ${
-          open ? "max-h-[500px] p-6" : "max-h-0 p-0 border-0"
-        }`}
+        className={`mx-4 mt-3 overflow-hidden rounded-3xl border border-white/10 bg-[#111111]/95 backdrop-blur-xl transition-all duration-500 lg:hidden ${open ? "max-h-[500px] p-6" : "max-h-0 p-0 border-0"
+          }`}
       >
         <div className="flex flex-col gap-6">
           {navLinks.map((link) => (

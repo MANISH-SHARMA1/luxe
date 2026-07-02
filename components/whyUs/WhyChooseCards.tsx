@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Diamond,
   UserCheck,
   ShieldCheck,
   CalendarClock,
@@ -93,9 +92,9 @@ export default function WhyChooseCards() {
 
             {/* Gold Divider */}
             <div className="my-5 flex items-center justify-center gap-3">
-              <div className="h-px w-12 bg-[#D6A45C]/40" />
+              <div className="h-px w-12 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
               <div className="h-2 w-2 rounded-full bg-[#D6A45C]" />
-              <div className="h-px w-12 bg-[#D6A45C]/40" />
+              <div className="h-px w-12 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
             </div>
 
             {/* Description */}

@@ -9,6 +9,7 @@ import {
     Heart,
     BadgeCheck,
 } from "lucide-react";
+import CountUp from "./CountUp";
 
 export default function Hero() {
     return (
@@ -30,11 +31,9 @@ export default function Hero() {
                 {/* LEFT */}
                 <div className="w-full lg:w-1/2 z-10">
 
-                    <div className="inline-flex items-center gap-2 rounded-full border border-[#d6a45c]/40 bg-[#1a1a1a] px-5 py-2 text-sm text-[#d6a45c]">
-                        ✨ Premium Beauty Salon
-                    </div>
 
-                    <h1 className="mt-8 text-5xl font-serif leading-tight md:text-7xl">
+
+                    <h1 className="mt-18 text-5xl font-serif leading-tight md:text-7xl">
                         Where{" "}
                         <span className="text-[#d6a45c]">
                             Beauty
@@ -68,7 +67,9 @@ export default function Hero() {
 
                         <div className="flex flex-col items-center">
                             <Star className="mb-3 text-[#d6a45c]" />
-                            <h2 className="text-2xl font-bold">4.9/5</h2>
+                            <h2 className="text-2xl font-bold">
+                                <CountUp end={4.9} decimals={1} suffix="/5" />
+                            </h2>
                             <p className="text-sm text-gray-400">
                                 Average Rating
                             </p>
@@ -76,7 +77,9 @@ export default function Hero() {
 
                         <div className="flex flex-col items-center">
                             <Users className="mb-3 text-[#d6a45c]" />
-                            <h2 className="text-2xl font-bold">15+</h2>
+                            <h2 className="text-2xl font-bold">
+                                <CountUp end={15} suffix="+" />
+                            </h2>
                             <p className="text-sm text-gray-400">
                                 Expert Stylists
                             </p>
@@ -84,7 +87,9 @@ export default function Hero() {
 
                         <div className="flex flex-col items-center">
                             <Heart className="mb-3 text-[#d6a45c]" />
-                            <h2 className="text-2xl font-bold">10K+</h2>
+                            <h2 className="text-2xl font-bold">
+                                <CountUp end={10} suffix="K+" />
+                            </h2>
                             <p className="text-sm text-gray-400">
                                 Happy Clients
                             </p>
@@ -92,7 +97,9 @@ export default function Hero() {
 
                         <div className="flex flex-col items-center">
                             <BadgeCheck className="mb-3 text-[#d6a45c]" />
-                            <h2 className="text-2xl font-bold">7 Days</h2>
+                            <h2 className="text-2xl font-bold">
+                                <CountUp end={7} suffix="days" />
+                            </h2>
                             <p className="text-sm text-gray-400">
                                 Open Weekly
                             </p>

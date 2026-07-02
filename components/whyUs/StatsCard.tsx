@@ -7,26 +7,31 @@ import {
   HeartHandshake,
 } from "lucide-react";
 import { PiCertificateBold } from "react-icons/pi";
+import CountUp from "../CountUp";
 
 const stats = [
   {
     icon: Users,
-    value: "5000+",
+    value: 5000,
+    suffix: "+",
     label: "Happy Clients",
   },
   {
     icon: PiCertificateBold,
-    value: "10+",
+    value: 10,
+    suffix: "+",
     label: "Years of Experience",
   },
   {
     icon: Star,
-    value: "4.9",
+    value: 4.9,
+    suffix: "",
     label: "Client Rating",
   },
   {
     icon: HeartHandshake,
-    value: "100%",
+    value: 100,
+    suffix: "%",
     label: "Satisfaction",
   },
 ];
@@ -58,11 +63,10 @@ export default function StatsCard() {
                   group relative flex items-center gap-5
                   px-8 py-10
                   transition-all duration-500
-                  hover:bg-white/[0.02]
-                  ${
-                    index !== stats.length - 1
-                      ? "lg:border-r lg:border-[#D6A45C]/15"
-                      : ""
+                  hover:bg-white/2
+                  ${index !== stats.length - 1
+                    ? "lg:border-r lg:border-[#D6A45C]/15"
+                    : ""
                   }
                 `}
               >
@@ -87,7 +91,7 @@ export default function StatsCard() {
                 {/* Text */}
                 <div>
                   <h3 className="font-serif text-5xl text-[#D6A45C]">
-                    {item.value}
+                    <CountUp end={item.value} duration={3000} suffix={item.suffix} />
                   </h3>
 
                   <p className="mt-2 text-gray-300">
