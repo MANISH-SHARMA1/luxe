@@ -23,13 +23,13 @@ export default function Services() {
                 {/* Small Heading */}
                 <div className="flex items-center justify-center gap-4">
 
-                    <span className="h-px w-16 bg-[#D6A45C]/60" />
+                    <span className="h-px w-16 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <p className="uppercase tracking-[0.35em] text-sm font-medium text-[#D6A45C]">
                         Our Services
                     </p>
 
-                    <span className="h-px w-16 bg-[#D6A45C]/60" />
+                    <span className="h-px w-16 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
 
                 </div>
 
@@ -51,7 +51,7 @@ export default function Services() {
                 {/* Decorative Icon */}
                 <div className="mt-4 2xl:mt-8 flex items-center justify-center gap-4">
 
-                    <span className="h-px w-20 bg-[#D6A45C]/40" />
+                    <span className="h-px w-20 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#D6A45C]/30 bg-[#171717]">
                         <Sparkles
@@ -60,7 +60,7 @@ export default function Services() {
                         />
                     </div>
 
-                    <span className="h-px w-20 bg-[#D6A45C]/40" />
+                    <span className="h-px w-20 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
 
                 </div>
 

@@ -32,13 +32,13 @@ export default function Gallery() {
             <div className="relative mx-auto max-w-7xl px-6 text-center">
                 {/* Badge */}
                 <div className="inline-flex items-center gap-5">
-                    <div className="h-px w-20 bg-[#D6A45C]/40" />
+                    <div className="h-px w-20 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#D6A45C]/30 bg-[#141414]">
                         <Camera className="text-[#D6A45C]" size={24} />
                     </div>
 
-                    <div className="h-px w-20 bg-[#D6A45C]/40" />
+                    <div className="h-px w-20 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
                 </div>
 
                 <p className="mt-3 2xl:mt-6 uppercase tracking-[0.4em] text-sm font-medium text-[#D6A45C]">
@@ -54,9 +54,9 @@ export default function Gallery() {
 
                 {/* Divider */}
                 <div className="mt-4 2xl:mt-8 flex items-center justify-center gap-3">
-                    <div className="h-px w-24 bg-[#D6A45C]/30" />
+                    <div className="h-px w-24 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
                     <div className="h-2 w-2 rotate-45 border border-[#D6A45C]" />
-                    <div className="h-px w-24 bg-[#D6A45C]/30" />
+                    <div className="h-px w-24 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
                 </div>
 
                 <p className="mx-auto mt-4 2xl:mt-8 max-w-3xl 2xltext-lg leading-7 2xl:leading-9 text-gray-400">

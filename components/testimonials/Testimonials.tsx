@@ -46,7 +46,7 @@ export default function Testimonials() {
 
                 <div className="inline-flex items-center gap-5">
 
-                    <div className="h-px w-20 bg-[#D6A45C]/30" />
+                    <div className="h-px w-20 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#D6A45C]/30 bg-[#121212] shadow-[0_0_30px_rgba(214,164,92,.15)]">
                         <MessageSquareQuote
@@ -55,7 +55,7 @@ export default function Testimonials() {
                         />
                     </div>
 
-                    <div className="h-px w-20 bg-[#D6A45C]/30" />
+                    <div className="h-px w-20 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
 
                 </div>
 
@@ -81,11 +81,11 @@ export default function Testimonials() {
 
                 <div className="mt-4 flex items-center justify-center gap-3">
 
-                    <div className="h-px w-24 bg-[#D6A45C]/30" />
+                    <div className="h-px w-24 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <div className="h-2 w-2 rotate-45 border border-[#D6A45C] bg-[#090909]" />
 
-                    <div className="h-px w-24 bg-[#D6A45C]/30" />
+                    <div className="h-px w-24 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
 
                 </div>
 

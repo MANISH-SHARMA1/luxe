@@ -68,9 +68,9 @@ export default function OfferCard({
       </p>
 
       <div className="my-6 flex items-center justify-center gap-2">
-        <div className="h-px w-12 bg-[#D6A45C]/30" />
+        <div className="h-px w-12 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
         <div className="h-2 w-2 rotate-45 border border-[#D6A45C]" />
-        <div className="h-px w-12 bg-[#D6A45C]/30" />
+        <div className="h-px w-12 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
       </div>
 
       <div className="text-center">

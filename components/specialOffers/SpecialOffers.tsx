@@ -25,13 +25,13 @@ export default function SpecialOffers() {
             <div className="relative mx-auto max-w-7xl px-6 text-center">
                 {/* Badge */}
                 <div className="inline-flex items-center gap-5">
-                    <span className="h-px w-20 bg-[#D6A45C]/40" />
+                    <span className="h-px w-20 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#D6A45C]/30 bg-[#121212]">
                         <Gift size={24} className="text-[#D6A45C]" />
                     </div>
 
-                    <span className="h-px w-20 bg-[#D6A45C]/40" />
+                    <span className="h-px w-20 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
                 </div>
 
                 <p className="mt-3 uppercase tracking-[0.4em] text-sm font-medium text-[#D6A45C]">
@@ -48,9 +48,9 @@ export default function SpecialOffers() {
 
                 {/* Decorative Divider */}
                 <div className="mt-4 flex items-center justify-center gap-3">
-                    <div className="h-px w-28 bg-[#D6A45C]/30" />
+                    <div className="h-px w-28 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
                     <div className="h-2 w-2 rotate-45 border border-[#D6A45C] bg-[#090909]" />
-                    <div className="h-px w-28 bg-[#D6A45C]/30" />
+                    <div className="h-px w-28 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
                 </div>
 
                 <p className="mx-auto mt-4 max-w-2xl text-xs md:text-sm leading-7 text-gray-400">
@@ -96,7 +96,7 @@ export default function SpecialOffers() {
 
                 {/* Bottom Badge */}
                 <div className="mt-14 flex items-center justify-center gap-4">
-                    <div className="h-px w-28 bg-[#D6A45C]/30" />
+                    <div className="h-px w-28 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <div className="rounded-full border border-[#D6A45C]/30 bg-[#121212] px-6 py-3">
                         <span className="uppercase tracking-[0.3em] text-sm font-medium text-[#D6A45C]">
@@ -104,7 +104,7 @@ export default function SpecialOffers() {
                         </span>
                     </div>
 
-                    <div className="h-px w-28 bg-[#D6A45C]/30" />
+                    <div className="h-px w-28 bg-linear-to-r from-[#D6A45C] to-[#D6A45C]/10" />
                 </div>
 
             </section>
