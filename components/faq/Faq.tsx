@@ -98,7 +98,7 @@ export default function FAQ() {
 
                 {/* Description */}
 
-                <p className="mx-auto mt-4 max-w-3xl leading-7 text-gray-400">
+                <p className="mx-auto mt-4 max-w-3xl leading-7 text-xs lg:text-base text-gray-400">
                     Everything you need to know before booking your beauty
                     appointment. From consultations to hygiene standards,
                     we've answered the questions our clients ask most often.

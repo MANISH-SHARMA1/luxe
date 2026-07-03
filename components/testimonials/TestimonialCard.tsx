@@ -59,7 +59,7 @@ export default function TestimonialCard({
 
                     <div className="mt-uto flex gap-4">
 
-                        <div className="relative h-14 w-14 overflow-hidden rounded-full border border-[#D6A45C]">
+                        <div className="relative h-10 lg:h-14 w-10 lg:w-14 overflow-hidden rounded-full border border-[#D6A45C]">
 
                             <Image
                                 src={avatar}
@@ -72,11 +72,11 @@ export default function TestimonialCard({
 
                         <div>
 
-                            <h3 className="text-lg font-semibold tracking-wide text-[#D6A45C]">
+                            <h3 className="text-base lg:text-lg font-semibold tracking-wide text-[#D6A45C]">
                                 {name}
                             </h3>
 
-                            <p className="mt-1 text-gray-400 text-sm">
+                            <p className="mt-1 text-gray-400 text-xs lg:text-sm">
                                 {service}
                             </p>
 
@@ -101,13 +101,13 @@ export default function TestimonialCard({
 
                 {/* Right Image */}
 
-                <div className="relative min-h-105 overflow-hidden">
+                <div className="relative min-h-60 lg:min-h-105 overflow-hidden">
 
                     <Image
                         src={image}
                         alt={service}
                         fill
-                        className="object-cover transition duration-700 group-hover:scale-110"
+                        className="lg:object-cover transition duration-700 group-hover:scale-110"
                     />
 
                     <div className="absolute inset-0 bg-linear-to-l from-transparent via-transparent to-[#111]" />

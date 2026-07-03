@@ -33,7 +33,7 @@ export default function Hero() {
 
 
 
-                    <h1 className="mt-18 text-5xl font-serif leading-tight md:text-7xl">
+                    <h1 className="mt-18 text-5xl font-serif leading-tight lg:text-7xl">
                         Where{" "}
                         <span className="text-[#d6a45c]">
                             Beauty
@@ -42,7 +42,7 @@ export default function Hero() {
                         Meets Perfection
                     </h1>
 
-                    <p className="mt-6 max-w-xl text-lg text-gray-300 leading-8">
+                    <p className="mt-6 max-w-xl md:text-lg text-gray-300 leading-8">
                         Experience luxurious salon & spa services tailored to
                         enhance your natural beauty. From hair styling to
                         bridal makeup, our experts help you look and feel your best.
@@ -63,7 +63,7 @@ export default function Hero() {
                     </div>
 
                     {/* Stats */}
-                    <div className="mt-16 grid grid-cols-2 gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-lg md:grid-cols-4">
+                    <div className="hidden mt-16 lg:grid grid-cols-2 gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-lg md:grid-cols-4">
 
                         <div className="flex flex-col items-center">
                             <Star className="mb-3 text-[#d6a45c]" />

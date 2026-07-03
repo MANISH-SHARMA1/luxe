@@ -42,7 +42,7 @@ export default function Footer() {
 
                 {/* Newsletter */}
 
-                <div className="mb-12 rounded-4xl border border-[#D6A45C]/20 bg-[#111111] p-10">
+                <div className="mb-12 rounded-4xl border border-[#D6A45C]/20 bg-[#111111] p-5 lg:p-10">
 
                     <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
 
@@ -62,10 +62,10 @@ export default function Footer() {
 
                             <input
                                 placeholder="Enter your email"
-                                className="flex-1 bg-transparent px-6 py-4 outline-none"
+                                className="flex-1 bg-transparent px-3 lg:px-6 py-2 lg:py-4 outline-none"
                             />
 
-                            <button className="flex items-center gap-2 bg-[#D6A45C] px-8 font-medium text-black transition hover:bg-[#c7964e]">
+                            <button className="flex items-center gap-2 bg-[#D6A45C] px-2 lg:px-8 text-sm lg:text-base font-medium text-black transition hover:bg-[#c7964e]">
 
                                 Subscribe
 

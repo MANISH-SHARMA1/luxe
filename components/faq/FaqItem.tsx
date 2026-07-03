@@ -44,15 +44,15 @@ export default function FAQItem({
                 text-left
             "
             >
-                <h3 className="pr-3 2xl:pr-6 font-medium text-white text-lg 2xl:text-xl">
+                <h3 className="pr-3 2xl:pr-6 font-medium text-white lg:text-lg 2xl:text-xl">
                     {question}
                 </h3>
 
                 <div
                     className={`
                     flex
-                    h-8 2xl:h-11
-                    w-8 2xl:w-11
+                    h-6 lg:h-8 2xl:h-11
+                    w-6 lg:w-8 2xl:w-11
                     shrink-0
                     items-center
                     justify-center
@@ -85,8 +85,8 @@ export default function FAQItem({
                             duration: 0.35,
                         }}
                     >
-                        <div className="border-t border-[#D6A45C]/10 px-4 2xl:px-8 pb-4 2xl:pb-8 pt-3 2xl:pt-6 text-sm 2xl:text-base">
-                            <p className="leading-8 text-gray-400">
+                        <div className="border-t border-[#D6A45C]/10 px-4 2xl:px-8 pb-4 2xl:pb-8 pt-3 2xl:pt-6 text-xs lg:text-sm 2xl:text-base">
+                            <p className="leading-6 lg:leading-8 text-gray-400">
                                 {answer}
                             </p>
                         </div>

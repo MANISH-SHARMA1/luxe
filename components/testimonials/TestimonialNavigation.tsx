@@ -62,7 +62,7 @@ export default function TestimonialNavigation() {
 
             </div>
 
-            <p className="text-sm uppercase tracking-[0.35em] text-[#D6A45C]/70">
+            <p className="text-xs lg:text-sm uppercase tracking-[0.35em] text-[#D6A45C]/70">
                 Swipe to explore more stories
             </p>
 

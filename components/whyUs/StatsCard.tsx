@@ -73,7 +73,7 @@ export default function StatsCard() {
                 {/* Icon */}
                 <div
                   className="
-                    flex h-16 w-16 shrink-0 items-center justify-center
+                    flex h-10 w-10 lg:h-16 lg:w-16 shrink-0 items-center justify-center
                     rounded-full
                     border border-[#D6A45C]/20
                     bg-[#171717]
@@ -90,11 +90,11 @@ export default function StatsCard() {
 
                 {/* Text */}
                 <div>
-                  <h3 className="font-serif text-5xl text-[#D6A45C]">
+                  <h3 className="font-serif text-3xl lg:text-5xl text-[#D6A45C]">
                     <CountUp end={item.value} duration={3000} suffix={item.suffix} />
                   </h3>
 
-                  <p className="mt-2 text-gray-300">
+                  <p className="mt-2 text-xs lg:text-base text-gray-300">
                     {item.label}
                   </p>
                 </div>

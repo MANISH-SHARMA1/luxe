@@ -30,8 +30,8 @@ export default function WhyChooseImage() {
             <div
                 className="
                     absolute
-                    bottom-8
-                    left-8
+                    bottom-6 lg:bottom-8
+                    left-6 lg:left-8
                     w-[320px]
                     rounded-[28px]
                     border border-[#D6A45C]/30

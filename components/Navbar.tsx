@@ -51,8 +51,8 @@ export default function Navbar() {
         left-0
         z-50
         w-full
-        flex
-        justify-center
+        lg:flex
+        lg:justify-center
         transition-all
         duration-700
         ease-[cubic-bezier(.76,0,.24,1)]
@@ -102,7 +102,7 @@ export default function Navbar() {
             >
               {link.name}
 
-              <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-[#D6A45C] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-2 left-0 h-0.5 w-0 bg-[#D6A45C] transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </nav>
@@ -124,7 +124,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`mx-4 mt-3 overflow-hidden rounded-3xl border border-white/10 bg-[#111111]/95 backdrop-blur-xl transition-all duration-500 lg:hidden ${open ? "max-h-[500px] p-6" : "max-h-0 p-0 border-0"
+        className={`mx-4 mt-3 overflow-hidden rounded-3xl border border-white/10 bg-[#111111]/95 backdrop-blur-xl transition-all duration-500 lg:hidden ${open ? "max-h-125 p-6" : "max-h-0 p-0 border-0"
           }`}
       >
         <div className="flex flex-col gap-6">

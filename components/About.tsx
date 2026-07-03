@@ -38,8 +38,8 @@ export default function About() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#3a2710,transparent_45%)] opacity-30" />
 
             {/* Decorative Dots */}
-            <div className="absolute left-16 top-28 text-[#D6A45C]/70">✦</div>
-            <div className="absolute right-28 top-52 text-2xl text-[#D6A45C]/70">
+            <div className="absolute left-10 lg:left-16 top-28 text-[#D6A45C]/70">✦</div>
+            <div className="absolute right-12 lg:right-28 top-52 text-2xl text-[#D6A45C]/70">
                 ✦
             </div>
 

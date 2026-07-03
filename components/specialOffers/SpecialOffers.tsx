@@ -99,7 +99,7 @@ export default function SpecialOffers() {
                     <div className="h-px w-28 bg-linear-to-r from-[#D6A45C]/10 to-[#D6A45C]" />
 
                     <div className="rounded-full border border-[#D6A45C]/30 bg-[#121212] px-6 py-3">
-                        <span className="uppercase tracking-[0.3em] text-sm font-medium text-[#D6A45C]">
+                        <span className="uppercase tracking-[0.3em] text-sm text-nowrap font-medium text-[#D6A45C]">
                             Limited Time Only
                         </span>
                     </div>

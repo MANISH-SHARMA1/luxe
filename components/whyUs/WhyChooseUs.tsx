@@ -17,11 +17,11 @@ export default function WhyChooseUs() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#3b2812,transparent_45%)] opacity-80" />
 
             {/* Floating Sparkles */}
-            <span className="absolute left-20 top-40 text-4xl text-[#D6A45C]/70">
+            <span className="absolute left-6 lg:left-20 top-36 lg:top-40 text-4xl text-[#D6A45C]/70">
                 ✦
             </span>
 
-            <span className="absolute right-32 top-56 text-3xl text-[#D6A45C]/60">
+            <span className="absolute right-16 lg:right-32 top-52 lg:top-56 text-3xl text-[#D6A45C]/60">
                 ✦
             </span>
 

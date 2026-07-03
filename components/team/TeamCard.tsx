@@ -65,7 +65,7 @@ export default function TeamCard({
           src={image}
           alt={name}
           fill
-          className="object-cover transition duration-700 group-hover:scale-110"
+          className="lg:object-cover transition duration-700 group-hover:scale-110"
         />
 
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
